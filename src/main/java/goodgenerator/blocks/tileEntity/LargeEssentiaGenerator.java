@@ -86,6 +86,10 @@ public class LargeEssentiaGenerator extends GT_MetaTileEntity_TooltipMultiBlockB
                 && updateEssentiaHatchState();
     }
 
+    private boolean returnTrue() {
+        return true;
+    }
+
     public boolean checkHatchTier() {
         for (GT_MetaTileEntity_Hatch_Input tHatch : mInputHatches) {
             if (tHatch.mTier > mTierLimit) return false;
